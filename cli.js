@@ -1,21 +1,23 @@
 #!/usr/bin/env node
-
+const { resolve } = require('path')
 const { Command } = require('commander');
-const { test } = require('./index')
+const getHandlers = require('./index')
 const pojoStick = require('pojo-stick')
 const pkg = require('./package.json')
 
-
 ;(async () => {
-  const persistentData = await pojoStick()
+  // persistent appData
+  const appData = await pojoStick(resolve('.', '.data-store.json'))
+
+  const { test } = getHandlers({ appData })
 
   const program = new Command();
+
   program
     .version(pkg.version)
-    .description('Save the world by eating good food!')
+    .description('__REPLACE_DESCRIPTION_WITH_MAKE_CMD__')
     .option('-d, --debug', 'enable debug mode')
-  
-  const unknownAction = (x) => console.warn(`unknown action: "${x}"`)
+  ;
   
   program
     .command('test <action> <type> [rest...]')

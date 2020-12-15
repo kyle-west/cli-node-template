@@ -1,3 +1,5 @@
+rm -rf node_modules/ >/dev/null
+
 defaultPkgName=`basename $(pwd)`
 
 read -p "cli-name: ($defaultPkgName)" pkgName
@@ -19,9 +21,18 @@ $description
 
 Example CLI command
 
-```
+\`\`\`
 $pkgName test <action> <type> [rest...]
-```
+\`\`\`
+
+
+## Contributing
+
+Run the following to test / dev locally:
+\`\`\`
+npm install
+npm link
+\`\`\`
 
 " > README.md
 

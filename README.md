@@ -1,12 +1,13 @@
-# __REPLACE_PACKAGE_NAME_WITH_MAKE_CMD__
+# cli-node-template
 
-__REPLACE_DESCRIPTION_WITH_MAKE_CMD__
+Create a Node CLI with this template
 
-## CLI
+1. Create a [new repository](https://github.com/new) from kyle-west/cli-node-template
+2. Pull down and run `bash make.sh`, following the prompts
+3. Review, commit, and push changes up
 
-Example CLI command
-
+Run the following to test / dev locally:
 ```
-__REPLACE_PACKAGE_NAME_WITH_MAKE_CMD__ test <action> <type> [rest...]
+npm install
+npm link
 ```
-
