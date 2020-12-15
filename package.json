@@ -1,0 +1,18 @@
+{
+  "name": "__REPLACE_PACKAGE_NAME_WITH_MAKE_CMD__",
+  "version": "0.1.0",
+  "description": "__REPLACE_DESCRIPTION_WITH_MAKE_CMD__",
+  "main": "cli.js",
+  "repository": "https://github.com/kyle-west/__REPLACE_PACKAGE_NAME_WITH_MAKE_CMD__",
+  "author": "Kyle West <@Kyl3W3st>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "pojo-stick": "^0.1.0"
+  },
+  "bin": {
+    "__REPLACE_PACKAGE_NAME_WITH_MAKE_CMD__": "./cli.js"
+  }
+}
