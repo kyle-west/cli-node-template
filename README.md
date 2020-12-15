@@ -1,5 +1,7 @@
 # cli-node-template
 
+![Status Badge](https://github.com/kyle-west/cli-node-template/workflows/Install%20and%20Test%20Flow/badge.svg)
+
 Create a Node CLI with this template
 
 1. Create a [new repository](https://github.com/new) from kyle-west/cli-node-template

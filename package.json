@@ -4,7 +4,7 @@
   "description": "__REPLACE_DESCRIPTION_WITH_MAKE_CMD__",
   "main": "cli.js",
   "repository": "https://github.com/kyle-west/__REPLACE_PACKAGE_NAME_WITH_MAKE_CMD__",
-  "author": "Kyle West <@Kyl3W3st>",
+  "author": "kyle-west",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
