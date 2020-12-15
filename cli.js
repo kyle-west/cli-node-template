@@ -20,7 +20,7 @@ const pkg = require('./package.json')
   ;
   
   program
-    .command('test <action> <type> [rest...]')
+    .command('test <action> [type] [rest...]')
     .description('Test out the CLI API')
     .action(test)
   ;

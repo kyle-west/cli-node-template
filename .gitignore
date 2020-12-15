@@ -118,3 +118,7 @@ dist
 
 # persistent app data
 .data-store.json
+
+# lockfiles
+package-lock.json
+yarn.lock
