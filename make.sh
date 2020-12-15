@@ -1,6 +1,6 @@
 defaultPkgName=`basename $(pwd)`
 
-read -p "package-name: ($defaultPkgName)" pkgName
+read -p "cli-name: ($defaultPkgName)" pkgName
 read -p "description: " description
 
 pkgName="${pkgName:-$defaultPkgName}"
