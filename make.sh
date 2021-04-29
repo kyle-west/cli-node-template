@@ -1,7 +1,7 @@
 rm -rf node_modules/ >/dev/null
 
 defaultPkgName=`basename $(pwd)`
-defaultUsername=`kyle-west`
+defaultUsername="kyle-west"
 
 read -p "cli-name: ($defaultPkgName)" pkgName
 read -p "author github username: ($defaultUsername)" username
