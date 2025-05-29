@@ -1,7 +1,7 @@
-const chalk = require('chalk');
-const { confirm, checkbox, text, select, number, password } = require('./lib/inputs')
+import chalk from 'chalk';
+import { confirm, checkbox, text, select, number, password } from './lib/inputs.js';
 
-module.exports = function getHandlers ({ appData }) {
+export default function getHandlers({ appData }) {
   
   async function test (action, type, rest) {
     appData.test = appData.test || { timesCalled: 0, lastCalledArgs: {} }
