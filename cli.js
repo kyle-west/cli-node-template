@@ -1,9 +1,13 @@
 #!/usr/bin/env node
-const { resolve } = require('path')
-const { Command } = require('commander');
-const getHandlers = require('./index')
-const pojoStick = require('pojo-stick')
-const pkg = require('./package.json')
+import { resolve } from 'path';
+import { Command } from 'commander';
+import getHandlers from './index.js';
+import pojoStick from 'pojo-stick';
+import { readFile } from 'fs/promises';
+
+const pkg = JSON.parse(
+  await readFile(new URL('./package.json', import.meta.url))
+);
 
 ;(async () => {
   // persistent appData

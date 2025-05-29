@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "description": "__REPLACE_DESCRIPTION_WITH_MAKE_CMD__",
   "main": "cli.js",
+  "type": "module",
   "repository": "https://github.com/kyle-west/__REPLACE_PACKAGE_NAME_WITH_MAKE_CMD__",
   "author": "kyle-west",
   "license": "UNLICENSED",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
-    "chalk": "^4.1.0",
-    "commander": "^6.1.0",
-    "inquirer": "^7.3.3",
-    "jest": "^26.6.3",
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "inquirer": "^12.6.3",
+    "jest": "^29.7.0",
     "pojo-stick": "^0.1.0"
   },
   "bin": {
